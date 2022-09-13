@@ -21,7 +21,8 @@
             }
             .stepbox{
                 height: 80px;
-                border: 1px solid red;
+                position: relative;
+                
                 
             }
             .red{
@@ -45,22 +46,73 @@
             .stepnone{
                 display: none;
             }
+            .circle{
+                width: 40px;
+                height: 40px;
+                
+                display:inline-block;
+                border-radius: 50px;
+                border:5px solid #8F9090;
+                text-align: center;
+                line-height: 40px;
+            }
+            .left{
+                float:left
+            }
+            .right{
+                float:right;
+            }
+            .center{
+                margin-left: 30% ;
+            }
+            .active{
+                border:5px solid #E422A4;
+            }
+            .line{
+                width: 100px;
+                height: 2px;
+                background-color: #8F9090;;
+                position: absolute;
+                top: 23px;
+                left: 60px;
+            }
+            .l2{
+                left: 235px;
+            }
         </style>
     </head>
     <body>
         <form class="myform">
-            <div class="stepbox"></div>
-            <div class="step1  stepnone">
-                
-                
+            <div class="stepbox">
+                <div class="line"></div>
+                <div class="line l2"></div>
+                <div class="circle left active ">1</div>
+                <div class="circle center ">2</div>
+                <div class="circle right  ">3</div>
+            </div>
+            <div class="step1 ">
+                <h3> Let's get started SETP1</h3>
+                <div>
+                    <label><span class="red">*</span> work email;</label> <br />
+                <input type="email" name="email" id="email" />
+            </div>
+            <input type="submit" name="submit" value="Next" class="step1btn" />
             </div>
             <div class="step2 stepnone">
-                
-                
+                <h3>  SETP 2</h3>
+            <div>
+                <label><span class="red">*</span> username;</label> <br />
+                <input type="email" name="email" id="email" />
             </div>
-            <div class="step3">
-                
-                
+            <input type="submit" name="submit" value="Next" class="step1btn" />
+            </div>
+            <div class="step3 stepnone ">
+                <h3>  SETP 3</h3>
+            <div>
+                <label><span class="red">*</span> Firstname;</label> <br />
+                <input type="email" name="email" id="email" />
+            </div>
+            <input type="submit" name="submit" value="Next" class="step1btn" />
             </div>
             
         </form>
